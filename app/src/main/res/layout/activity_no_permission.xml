@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
-    tools:context=".MainActivity">
+    tools:context=".NoPermissionActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,15 +16,32 @@
             android:layout_width="135dp"
             android:layout_height="77dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/citcall"/>
+            android:src="@drawable/x"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black_txt_Color"
+            android:layout_marginTop="8dp"
+            android:text="Permission Required"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:textStyle="normal"
             android:textColor="@color/black_txt_Color"
             android:layout_marginTop="8dp"
-            android:text="citcall.com"
+            android:text="Please Allow Permission"
             />
+
+        <TextView
+            android:id="@+id/backHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="60dp"
+            android:text="Retry"/>
     </LinearLayout>
 </RelativeLayout>
