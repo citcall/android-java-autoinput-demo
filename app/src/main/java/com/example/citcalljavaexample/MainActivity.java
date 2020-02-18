@@ -30,7 +30,16 @@ public class MainActivity extends AppCompatActivity {
                 ActivityCompat.requestPermissions(MainActivity.this,
                         new String[] {Manifest.permission.READ_PHONE_STATE}, PHONE_STATE_PERMISSION);
             } else {
-                startActivity(new Intent(MainActivity.this, MobileVerification.class));
+                new android.os.Handler().postDelayed(
+                        new Runnable() {
+                            public void run() {
+                                startActivity(new Intent(MainActivity.this,
+                                        MobileVerification.class));
+                            }
+                            },
+                        1000);
+
+
             }
         }
     }

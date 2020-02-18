@@ -32,23 +32,27 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/space_x2"
                 android:orientation="horizontal">
-                <EditText
-                    android:id="@+id/field_phone_prefix"
+                <TextView
                     style="@style/EditTextAppearance"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/FirstToken"
+                    android:layout_width="173dp"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/space_x1"
-                    android:gravity="center"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right"
                     android:minWidth="@dimen/space_x6"
-                    android:text="+62" />
+                    android:text="62213040" />
                 <EditText
-                    android:id="@+id/field_phone_suffix"
+                    android:id="@+id/inputOtp"
                     style="@style/EditTextAppearance"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:digits="0123456789"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:hint="xxxx"
+                    android:maxLength="4"/>
             </LinearLayout>
             <Button
                 android:id="@+id/btn_verify"
@@ -56,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/space_half"
-                android:text="Verifiy" />
+                android:text="Verifiy OTP" />
             <ProgressBar
                 android:visibility="gone"
                 android:id="@+id/progressBar"
