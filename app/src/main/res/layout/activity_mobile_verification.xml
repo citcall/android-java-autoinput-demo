@@ -38,8 +38,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/space_x1"
-                    android:focusable="false"
-                    android:focusableInTouchMode="false"
                     android:gravity="center"
                     android:minWidth="@dimen/space_x6"
                     android:text="+62" />
@@ -59,6 +57,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/space_half"
                 android:text="Verifiy" />
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
         </LinearLayout>
         <TextView
             android:id="@+id/txt_copyright"
