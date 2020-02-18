@@ -4,6 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InputOtp">
-
+    tools:context=".MobileVerification">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:padding="@dimen/space_x2">
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/space_x14"
+            android:layout_height="@dimen/space_x5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/space_x2"
+            android:src="@drawable/citcall" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/txt_copyright"
+            android:layout_below="@+id/img_logo"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/space_x2"
+            android:paddingRight="@dimen/space_x2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_x2"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/EditTextAppearance"
+                    android:id="@+id/FirstToken"
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/space_x1"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="right"
+                    android:minWidth="@dimen/space_x6"
+                    android:text="62213040" />
+                <EditText
+                    android:id="@+id/inputOtp"
+                    style="@style/EditTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    android:hint="xxxx"
+                    android:maxLength="4"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_verify"
+                style="@style/ButtonPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_half"
+                android:text="Verifiy OTP" />
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txt_copyright"
+            style="@style/TextAppearanceRegularDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/space_x2"
+            android:text="citcall.com" />
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

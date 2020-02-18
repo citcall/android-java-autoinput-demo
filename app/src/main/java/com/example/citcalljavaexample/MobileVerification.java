@@ -74,9 +74,6 @@ public class MobileVerification extends AppCompatActivity {
     }
 
     private void requestOtp() {
-
-        View view = null;
-
         final String reqPrefix = prefix.getText().toString().trim();
         final String reqMsisdn = mobileNumber.getText().toString().trim();
 
@@ -98,7 +95,6 @@ public class MobileVerification extends AppCompatActivity {
             private Button btnRequest;
 
             protected String doInBackground(Void... voids) {
-
                 //creating request handler object
                 RequestHandler requestHandler = new RequestHandler();
                 //creating request parameters
@@ -122,14 +118,12 @@ public class MobileVerification extends AppCompatActivity {
             @Override
             protected void onPostExecute(String s) {
                 super.onPostExecute(s);
-                Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
                 //hiding the progressbar after completion
                 progressBar.setVisibility(View.GONE);
                 btnRequest.setEnabled(true);
                 try {
                     //converting response to json object
                     JSONObject obj = new JSONObject(s);
-                    //Toast.makeText(getApplicationContext(),s, Toast.LENGTH_SHORT).show();
                     //if no error in response
                     if (!obj.getBoolean("error")) {
                         Intent i = new Intent(MobileVerification.this,InputOtp.class);
