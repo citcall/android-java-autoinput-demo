@@ -22,5 +22,23 @@ public class Success extends AppCompatActivity {
                 startActivity(browserIntent);
             }
         });
+
+        findViewById(R.id.mailUs).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("mailto:info@citcall.com"));
+                startActivity(browserIntent);
+            }
+        });
+
+        findViewById(R.id.waUs).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://api.whatsapp.com/send?phone=622125685888"));
+                startActivity(browserIntent);
+            }
+        });
     }
 }

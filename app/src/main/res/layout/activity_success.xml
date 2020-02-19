@@ -43,5 +43,19 @@
             android:textColor="@color/colorPrimary"
             android:layout_marginTop="60dp"
             android:text="View This Code"/>
+        <TextView
+            android:id="@+id/mailUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="60dp"
+            android:text="Contact us"/>
+        <TextView
+            android:id="@+id/waUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="60dp"
+            android:text="Whatsapp"/>
     </LinearLayout>
 </RelativeLayout>
