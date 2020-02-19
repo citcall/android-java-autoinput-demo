@@ -1,4 +1,4 @@
-package com.example.citcalljavaexample;
+package com.citcalldemo.citcalljavaexample;
 
 import androidx.appcompat.app.AppCompatActivity;
 

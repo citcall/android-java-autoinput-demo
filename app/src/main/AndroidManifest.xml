@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.citcalljavaexample">
+    package="com.citcalldemo.citcalljavaexample">
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
@@ -14,11 +14,11 @@
         android:roundIcon="@mipmap/ic_citcall"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Success"></activity>
-        <activity android:name=".InputOtp" />
-        <activity android:name=".MobileVerification" />
-        <activity android:name=".NoPermissionActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.citcalldemo.citcalljavaexample.Success"></activity>
+        <activity android:name="com.citcalldemo.citcalljavaexample.InputOtp" />
+        <activity android:name="com.citcalldemo.citcalljavaexample.MobileVerification" />
+        <activity android:name="com.citcalldemo.citcalljavaexample.NoPermissionActivity" />
+        <activity android:name="com.citcalldemo.citcalljavaexample.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".PhoneStateReceiver">
+        <receiver android:name="com.citcalldemo.citcalljavaexample.PhoneStateReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.PHONE_STATE" />
             </intent-filter>

@@ -1,4 +1,4 @@
-package com.example.citcalljavaexample;
+package com.citcalldemo.citcalljavaexample;
 
 public class URLs {
 

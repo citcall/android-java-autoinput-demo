@@ -1,4 +1,4 @@
-package com.example.citcalljavaexample;
+package com.citcalldemo.citcalljavaexample;
 
 import android.content.Context;
 
